@@ -16,7 +16,7 @@ Possible techniques (with code adjustements for special cases):
 - unstable PQC via aws-lc-rs
 - FIPS via aws-lc-rs
 
-Note that the logging is intentionally verbose, with entries for every connection, detailing how many bytes are sent, when the connection was closed, how many connections have been observed, and more.
+Note that the logging is intentionally verbose, with entries for every connection, detailing how many bytes are sent, when the connection is closed, how many connections are observed, and more.
 
 ## TLS termination is bad...
 
