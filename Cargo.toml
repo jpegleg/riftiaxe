@@ -1,0 +1,22 @@
+[package]
+name = "riftiaxe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mio = { version = "0.8", features = ['net', 'os-poll'] }
+env_logger = "0.9"
+log = "0.4.17"
+pki-types = { package = "rustls-pki-types", version = "1", features = ["std"] }
+rcgen = { version = "0.12", features = ["pem", "ring"], default-features = false }
+rustls = { version = "*", features = ['aws_lc_rs'] }
+aws-lc-rs = { version = "1.0.0", features = ["ring-sig-verify", "unstable"] }
+rustls-pemfile = "2"
+sct = "0.7.0"
+serde = "1.0.147"
+serde_derive = "1.0.147"
+webpki-roots = "0.22.5"
+docopt = "1.1.1"
+chrono = "0.4"
+untrusted = { version = "0.7" }
+uuid = { version = "0.4", features = ["serde", "v4"] }
